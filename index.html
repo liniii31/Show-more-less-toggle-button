@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: bisque;
+        }
+        main{
+            display:flex;
+            align-items: center;
+            justify-content: center;            
+        }
+        #more-less{
+            background-color: white;
+            padding:10px;
+            width:600px;
+            border:2px solid black;
+            border-radius: 12px;
+            color: linear-gradient(to bottom, black, lightgrey 90%);
+        }
+        button{
+            margin-top:15px;
+            border-color: blue;
+            padding:5px;
+            border-radius: 7px;
+            color:blue;
+        }
+        #more{
+            display:none;
+        }
+        button:hover{
+            cursor:pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="more-less">
+            <h1>A title of some type</h1>
+            <div id="less">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores enim, rem nihil sunt adipisci harum sint accusamus iusto autem aut consequatur nemo in earum reprehenderit minima eligendi iure.</div>
+            <div id="more">Corporis, assumenda deserunt quos laboriosam eius quas doloremque nesciunt aspernatur reiciendis omnis asperiores natus, temporibus aperiam maxime consequuntur. Fuga impedit labore doloribus ipsum autem ratione vitae voluptates, sint sed assumenda optio iste itaque quia ipsa nihil ab? Delectus saepe aut ab minus provident libero numquam dicta adipisci voluptatum earum nihil blanditiis architecto, fuga velit deserunt error atque et quod pariatur impedit! Explicabo quod quisquam, dolor eos rem odio iure ipsa cupiditate unde.Corporis, assumenda deserunt quos laboriosam eius quas doloremque nesciunt aspernatur reiciendis omnis asperiores natus, temporibus aperiam maxime consequuntur. Fuga impedit labore doloribus ipsum autem ratione vitae voluptates, sint sed assumenda optio iste itaque quia ipsa nihil ab? Delectus saepe aut ab minus provident libero numquam dicta adipisci voluptatum earum nihil blanditiis architecto, fuga velit deserunt error atque et quod pariatur impedit! Explicabo quod quisquam, dolor eos rem odio iure ipsa cupiditate unde.Corporis, assumenda deserunt quos laboriosam eius quas doloremque nesciunt aspernatur reiciendis omnis asperiores natus, temporibus aperiam maxime consequuntur. Fuga impedit labore doloribus ipsum autem ratione vitae voluptates, sint sed assumenda optio iste itaque quia ipsa nihil ab? Delectus saepe aut ab minus provident libero numquam dicta adipisci voluptatum earum nihil blanditiis architecto, fuga velit deserunt error atque et quod pariatur impedit! Explicabo quod quisquam, dolor eos rem odio iure ipsa cupiditate unde.Corporis, assumenda deserunt quos laboriosam eius quas doloremque nesciunt aspernatur reiciendis omnis asperiores natus, temporibus aperiam maxime consequuntur. Fuga impedit labore doloribus ipsum autem ratione vitae voluptates, sint sed assumenda optio iste itaque quia ipsa nihil ab? Delectus saepe aut ab minus provident libero numquam dicta adipisci voluptatum earum nihil blanditiis architecto, fuga velit deserunt error atque et quod pariatur impedit! Explicabo quod quisquam, dolor eos rem odio iure ipsa cupiditate unde.</div>
+            <button id="show" onClick="show()">Show More</button>
+        </div>                
+    </main>
+</body>
+<script>
+    let moreDiv = document.getElementById('more');
+    let button = document.getElementById('show');
+    function show(){
+        if(button.innerHTML == "Show More"){
+            moreDiv.style.display="block";
+            button.innerHTML = "Show Less";
+        }else{
+            moreDiv.style.display="none"; 
+            button.innerHTML = "Show More";
+        }
+
+    }
+</script>
+</html>
